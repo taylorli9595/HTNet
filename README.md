@@ -23,11 +23,9 @@ python test_CL.py --model_path ./checkpoints/htnet_best.pth
 ⚙️ Usage
 1️⃣ Training
 bash
-复制代码
 python train_two.py --data_dir ./datasets/SAR --epochs 100 --batch_size 16
 2️⃣ Testing
 bash
-复制代码
 python test_CL.py --model_path ./checkpoints/htnet_best.pth --input ./test_images/
 
 If you use this code or find our work helpful, please cite the following paper:
