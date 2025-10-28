@@ -1,8 +1,17 @@
 # HTNet
 #code for Two-Stream Multiplicative Heavy-Tail Noise Despeckling Network With Truncation Loss[https://ieeexplore.ieee.org/document/10210392]
 
-通过网盘分享的文件：weight.zip
-链接: https://pan.baidu.com/s/1GFS7g0AmDCs83umVM2gZgA 提取码: q1h4
+The pretrained model weights are available via Baidu Cloud:
+
+Link: https://pan.baidu.com/s/1GFS7g0AmDCs83umVM2gZgA
+
+Extraction Code: q1h4
+
+Download the file weight.zip and extract it into the ./checkpoints/ directory before running the testing script.
+unzip weight.zip -d ./checkpoints/
+python test_CL.py --model_path ./checkpoints/htnet_best.pth
+
+
 ├── datasets/          # Dataset preparation scripts and sample data loaders
 ├── networks/          # Network architectures (two-stream CNN, truncation loss modules)
 ├── datasets.py        # Dataset definition and preprocessing (e.g., patch extraction, normalization)
